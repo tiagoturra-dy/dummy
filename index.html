@@ -3,7 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Test Site</title>
+  <title>DY Test Site</title>
+
+  <script>
+    window.dyTestSiteVersion = "1.0.0"
+  </script>
 
   <link rel="preconnect" href="//cdn.dynamicyield.com">
   <link rel="preconnect" href="//st.dynamicyield.com">
@@ -92,6 +96,12 @@
     .buttons {
       text-align: right;
     }
+    small {
+      font-style: italic;
+      display: block;
+      margin-top: 1rem;
+      text-align: right;
+    }
   </style>
 </head>
 <body>
@@ -120,6 +130,7 @@
       <a href="#" class="btn" onclick="submitGender(); return false;">Submit</a>
       <a href="#" class="btn btn-reset" onclick="resetSession(); return false;">Reset Session</a>
     </div>
+    <small>version: 1.0.0</small>
   </div>
 
   <script>
